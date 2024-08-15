@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Contato - HanaH Clínica Médica</title>
+    <style>
+        /* Estilização básica */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #271D3B;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sidebar img.logo {
+            max-width: 50%;
+            height: auto;
+            display: flex; /* Garante que a imagem seja tratada como um bloco */
+            margin: 0 auto 20px; /* Centraliza horizontalmente */
+        }
+
+        .sidebar h2 {
+            font-size: 1.5rem;
+            color: #f9f9f9;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #8262C3;
+            font-size: 1rem;
+            padding: 5px 0;
+        }
+
+        /* Main content */
+        .main-content {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background-color: #8262C3;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Formulário de contato */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form label {
+            align-self: flex-start;
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form textarea {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #8262C3;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #271D3B;
+        }
+
+        /* Rodapé */
+        .footer {
+            background-color: #271D3B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-section {
+            margin: 10px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-section h2 {
+            margin-top: 0;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section ul li a {
+            color: #f9f9f9;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            border-top: 1px solid #8262C3;
+            padding-top: 10px;
+        }
+
+        /* Ajuste de layout para telas maiores */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .sidebar {
+                width: 250px;
+                height: 100vh;
+            }
+
+            .main-content {
+                flex: 1;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/HanaH_logo.png" alt="Logo HanaH Clínica Médica" class="logo">
+                </a>
+            </div>
+            <h2>Menu</h2>
+            <nav>
+                <ul>
+                    <li><a href="clinica.html" title="Clínica Geral">Clínica Geral</a></li>
+                    <li><a href="odontologia.html" title="Odontologia">Odontologia</a></li>
+                    <li><a href="cardiologia.html" title="Cardiologia">Cardiologia</a></li>
+                    <li><a href="psicologia.html" title="Psicologia">Psicologia</a></li>
+                    <li><a href="horario.html" title="Horario">Horário de Atendimento</a></li>
+                    <li><a href="contato.html" title="Contato">Contato</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Main Content -->
+        <div class="main-content">
+            <img src="assets/contato.png" alt="Imagem do cabeçalho" class="header-image">
+            <header class="header">
+                <h1>Entre em Contato com a HanaH Clínica Médica</h1>
+            </header>
+            <div class="content">
+                <h2>Contatos</h2>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>WhatsApp: (11) 91234-5678</p>
+                <p>Endereço: Rua Exemplo, 123 - Bairro - Cidade/UF</p>
+
+                <!-- Iframe Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9153625164146!2d-46.63432598499296!3d-23.54768248468913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce583f24a6743b%3A0x8b1f4c2b0b5b909e!2sAv.%20Paulista%2C%201575%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-200%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1632786238486!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <!-- Formulário de contato -->
+                <h2>Formulário de Contato</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Assunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <div>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Rodapé -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h2>Contato</h2>
+                        <p>Rua Exemplo, 123 - Bairro - Cidade/UF</p>
+                        <p>Telefone: (11) 1234-5678</p>
+                        <p>Email: contato@hanahclinica.com.br</p>
+                    </div>
+                    <div class="footer-section">
+                        <h2>Nossas Redes Sociais</h2>
+                        <a href="#" title="Facebook"><img src="assets/facebook-icon.png" alt="Facebook" class="social-icon"></a>
+                        <a href="#" title="Instagram"><img src="assets/instagram-icon.png" alt="Instagram" class="social-icon"></a>
+                        <a href="#" title="Twitter"><img src="assets/twitter-icon.png" alt="Twitter" class="social-icon"></a>
+                    </div>
+                    <div class="footer-section">
+                        <h2>Links Rápidos</h2>
+                        <ul>
+                            <li><a href="privacidade.html" title="Política de Privacidade">Política de Privacidade</a></li>
+                            <li><a href="termos_servicos.html" title="Termos de Serviço">Termos de Serviço</a></li>
+                            <li><a href="sobre_nos.html" title="Sobre Nós">Sobre Nós</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    &copy; 2024 HanaH Clínica Médica. Todos os direitos reservados.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

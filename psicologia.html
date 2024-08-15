@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Psicologia - HanaH Clínica Médica</title>
+    <style>
+        /* Estiliza o corpo da página */
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333; /* Cor do texto para garantir bom contraste */
+            background-color: #f9f9f9; /* Cor de fundo clara */
+        }
+
+        /* Centraliza o contêiner da logo */
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* Ajusta o estilo da logo */
+        .logo {
+            max-width: 50%; /* Reduz o tamanho da logo pela metade */
+            height: auto;
+        }
+
+        /* Container principal que organiza o layout */
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Sidebar para o menu lateral */
+        .sidebar {
+            background-color: #271D3B;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza o conteúdo horizontalmente */
+            justify-content: center; /* Centraliza o conteúdo verticalmente */
+        }
+
+        /* Estilo para a logo */
+        .sidebar img.logo {
+            max-width: 50%; /* Reduz o tamanho da logo pela metade */
+            height: auto;
+            display: flex; /* Garante que a imagem seja tratada como um bloco */
+            margin: 0 auto 20px; /* Centraliza horizontalmente */
+        }
+
+        /* Estilo para o cabeçalho do menu lateral */
+        .sidebar h2 {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            color: #f9f9f9;
+            text-align: center; /* Centraliza o texto */
+        }
+
+        /* Estilo para a lista de itens do menu */
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        /* Estilo para cada item do menu */
+        .sidebar ul li {
+            margin: 10px 0;
+            text-align: center; /* Centraliza o texto dos itens do menu */
+        }
+
+        /* Estilo para links do menu */
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #8262C3;
+            font-size: 1rem;
+            padding: 5px 0;
+        }
+
+        /* Estiliza a área principal de conteúdo */
+        .main-content {
+            flex: 1;
+            padding: 10px;
+        }
+
+        /* Estiliza a imagem do cabeçalho */
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block; /* Remove o espaço em branco abaixo da imagem */
+            margin-bottom: 20px; /* Espaço abaixo da imagem */
+        }
+
+        /* Estiliza o cabeçalho principal */
+        .header {
+            background-color: #8262C3;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Estiliza a área de conteúdo principal */
+        .content {
+            margin: 20px 0;
+            text-align: left; /* Alinha o texto à esquerda */
+        }
+
+        /* Estiliza o rodapé */
+        .footer {
+            background-color: #271D3B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-section {
+            margin: 10px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-section h2 {
+            margin-top: 0;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section ul li a {
+            color: #f9f9f9;
+            text-decoration: none;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            border-top: 1px solid #8262C3;
+            padding-top: 10px;
+        }
+
+        /* Ajusta o layout para telas maiores */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+            .sidebar {
+                width: 250px;
+                height: 100vh;
+                padding: 20px;
+                align-items: center; /* Garante que o conteúdo esteja centralizado na sidebar */
+            }
+            .main-content {
+                flex: 1;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar com a logo e menu -->
+        <aside class="sidebar">
+            <div class="logo-container">
+                <a href="index.html" title="Página Principal">
+                    <img src="assets/HanaH_logo.png" alt="Logo da HanaH Clínica Médica" class="logo" role="img">
+                </a>
+            </div>
+            <h2>Menu</h2>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="clinica.html" title="Clínica Geral">Clínica Geral</a></li>
+                    <li><a href="odontologia.html" title="Odontologia">Odontologia</a></li>
+                    <li><a href="cardiologia.html" title="Cardiologia">Cardiologia</a></li>
+                    <li><a href="psicologia.html" title="Psicologia">Psicologia</a></li>
+                    <li><a href="horario.html" title="Horario">Horário de Atendimento</a></li>
+                    <li><a href="contato.html" title="Contato">Contato</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Área principal do conteúdo -->
+        <div class="main-content">
+            <img src="assets/psicologia.png" alt="Imagem do cabeçalho Psicologia" class="header-image" role="img">
+            <header class="header">
+                <h1>Psicologia na HanaH Clínica Médica</h1>
+            </header>
+            <!-- Conteúdo principal adicionado aqui -->
+            <div class="content">
+                <h2>Cuide da Sua Saúde Mental com Nossa Equipe Especializada</h2>
+                <p>Na HanaH Clínica Médica, oferecemos um atendimento psicológico completo para promover o bem-estar emocional e mental dos nossos pacientes. Nossa equipe de psicólogos está preparada para oferecer suporte em diversas áreas.</p>
+                
+                <h2>Serviços Oferecidos</h2>
+                <ul>
+                    <li>Consultas psicológicas individuais</li>
+                    <li>Terapias de grupo</li>
+                    <li>Acompanhamento de transtornos emocionais e comportamentais</li>
+                    <li>Orientação para gerenciamento de estresse e ansiedade</li>
+                    <li>Tratamento de depressão e outros distúrbios psicológicos</li>
+                    <li>Suporte em situações de crise</li>
+                </ul>
+
+                <h2>Equipe de Psicólogos</h2>
+                <p>Nossos psicólogos são experientes e utilizam técnicas baseadas em evidências para ajudar você a superar desafios e melhorar sua qualidade de vida. Oferecemos um ambiente acolhedor e confidencial para garantir o melhor suporte possível.</p>
+
+                <h2>Por Que Escolher Nossa Clínica?</h2>
+                <p>Além de uma equipe qualificada, proporcionamos um atendimento personalizado e sensível às necessidades individuais de cada paciente. Nosso compromisso é com a sua saúde mental e emocional.</p>
+            </div>
+            <!-- Tabela de horários -->
+            <div class="service-hours">
+                <h2>Horários de Atendimento</h2>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Rodapé -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h2>Contato</h2>
+                        <p>Rua Exemplo, 123 - Bairro - Cidade/UF</p>
+                        <p>Telefone: (11) 1234-5678</p>
+                        <p>Email: contato@hanahclinica.com.br</p>
+                    </div>
+                    <div class="footer-section">
+                        <h2>Nossas Redes Sociais</h2>
+                        <a href="#" title="Facebook"><img src="assets/facebook-icon.png" alt="Facebook" class="social-icon"></a>
+                        <a href="#" title="Instagram"><img src="assets/instagram-icon.png" alt="Instagram" class="social-icon"></a>
+                        <a href="#" title="Twitter"><img src="assets/twitter-icon.png" alt="Twitter" class="social-icon"></a>
+                    </div>
+                    <div class="footer-section">
+                        <h2>Links Rápidos</h2>
+                        <ul>
+                            <li><a href="privacidade.html" title="Política de Privacidade">Política de Privacidade</a></li>
+                            <li><a href="termos_serviços.html" title="Termos de Serviço">Termos de Serviço</a></li>
+                            <li><a href="sobre_nos.html" title="Sobre Nós">Sobre Nós</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 HanaH Clínica Médica. Todos os direitos reservados a Jamerson Andrade Web Developer.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
